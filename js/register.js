@@ -19,3 +19,14 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+// inputs
+const email = document.getElementById('email').value;
+const password = document.getElementById('password').value;
+
+// submit
+const submit = document.getElementById('submit').value;
+submit.addEventListener('click', function(event){
+    event.preventDefault();
+    alert('Funcionou!')
+})
