@@ -35,12 +35,12 @@ submit.addEventListener('click', function(event){
     const password = document.getElementById('password').value;
 
     createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-        // Signed up 
-        const user = userCredential.user;
-        alert('Criando conta...')
-        // ...
-    })
+        .then((userCredential) => {
+            // Signed up 
+            const user = userCredential.user;
+            alert('Criando conta...')
+            // ...
+        })
     .catch((error) => {
         const errorCode = error.code;   
         const errorMessage = error.message;
