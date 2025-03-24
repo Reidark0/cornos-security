@@ -25,8 +25,8 @@ const email = document.getElementById('email').value;
 const password = document.getElementById('password').value;
 
 // submit
-const submit = document.getElementById('submit').value;
+const submit = document.getElementById('submit');
 submit.addEventListener('click', function(event){
     event.preventDefault();
-    alert(5)
+    alert('Funcionou!')
 })
