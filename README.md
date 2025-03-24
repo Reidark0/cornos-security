@@ -1,20 +1,20 @@
-# Corno's Security Login Page
+# Corno's Security
 
-A modern and secure login page for Corno's Security, featuring a clean and responsive design.
+🌐 Site: https://reidark0.github.io/cornos-security/
+
+A secure login page for Corno's Security - Your trusted partner in cybersecurity solutions.
 
 ## Features
 
-- Responsive design that works on all devices
-- Modern gradient background
-- Clean and intuitive user interface
-- Form validation
-- Password recovery option
+- Modern and responsive login interface
+- Clean and intuitive design
+- Mobile-friendly layout
 
-## Technologies Used
+## Technologies
 
 - HTML5
 - CSS3
-- Modern CSS Features (Flexbox, CSS Grid, Custom Properties)
+- GitHub Pages for deployment
 
 ## Live Demo
 
