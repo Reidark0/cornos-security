@@ -10,11 +10,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
-                              #ff6b6b 0%, 
-                              #a82c2c 50%, 
-                              #4a0f0f 100%);
-    transition: background 0.1s ease;
+    background: 
+        radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+                       rgba(255, 107, 107, 0.15) 0%, 
+                       rgba(168, 44, 44, 0.05) 25%, 
+                       transparent 50%),
+        linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: all 0.3s ease;
 }
 
 .login-container {
