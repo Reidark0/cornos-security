@@ -2,7 +2,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js";
 // https://firebase.google.com/docs/web/learn-more#available-libraries
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -34,12 +34,12 @@ submit.addEventListener('click', function (event) {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    createUserWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
             alert('Criando conta...')
-            // window.location.href =  'dashboard.html'
+            window.location.href =  'dashboard.html'
             // ...
         })
         .catch((error) => {
