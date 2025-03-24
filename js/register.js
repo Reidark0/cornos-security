@@ -10,13 +10,13 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBaCTF0OZGMIh8fUlz-PbFqdN7R9tpeUuk",
-  authDomain: "cornos-security.firebaseapp.com",
-  projectId: "cornos-security",
-  storageBucket: "cornos-security.firebasestorage.app",
-  messagingSenderId: "834244118547",
-  appId: "1:834244118547:web:3148fcb9993b134c7d97e6",
-  measurementId: "G-ZRC7VMZ35N"
+    apiKey: "AIzaSyBaCTF0OZGMIh8fUlz-PbFqdN7R9tpeUuk",
+    authDomain: "cornos-security.firebaseapp.com",
+    projectId: "cornos-security",
+    storageBucket: "cornos-security.firebasestorage.app",
+    messagingSenderId: "834244118547",
+    appId: "1:834244118547:web:3148fcb9993b134c7d97e6",
+    measurementId: "G-ZRC7VMZ35N"
 };
 
 // Initialize Firebase
@@ -27,7 +27,7 @@ const auth = getAuth();
 
 // submit
 const submit = document.getElementById('submit');
-submit.addEventListener('click', function(event){
+submit.addEventListener('click', function (event) {
     event.preventDefault();
 
     // inputs
@@ -41,10 +41,10 @@ submit.addEventListener('click', function(event){
             alert('Criando conta...')
             // ...
         })
-    .catch((error) => {
-        const errorCode = error.code;   
-        const errorMessage = error.message;
-        alert(errorMessage);
-        // ..
-    })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert(errorMessage);
+            // ..
+        })
 })
