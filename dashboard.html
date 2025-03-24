@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corno's Security Dashboard - Your cybersecurity control center">
+    <meta name="keywords" content="security, dashboard, cybersecurity, monitoring">
+    <meta name="author" content="Corno's Security">
+    <title>Dashboard - Corno's Security</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>Corno's Security</h2>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-shield-alt"></i> Security Status</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i> Alerts</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> Analytics</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li class="logout"><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+        
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-info">
+                    <span class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </span>
+                    <div class="user-profile">
+                        <img src="https://via.placeholder.com/40" alt="User Profile">
+                        <span>Admin User</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>System Status</h3>
+                    <div class="status-indicator online"></div>
+                    <p>All systems operational</p>
+                </div>
+                <div class="card">
+                    <h3>Active Threats</h3>
+                    <div class="threat-count">2</div>
+                    <p>Medium priority</p>
+                </div>
+                <div class="card">
+                    <h3>Security Score</h3>
+                    <div class="score">92%</div>
+                    <p>Excellent</p>
+                </div>
+                <div class="card">
+                    <h3>Last Update</h3>
+                    <div class="timestamp">2 min ago</div>
+                    <p>System scan completed</p>
+                </div>
+            </div>
+
+            <div class="dashboard-charts">
+                <div class="chart-container">
+                    <h3>Security Activity</h3>
+                    <div class="chart-placeholder">
+                        Activity Chart will be displayed here
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>Threat Distribution</h3>
+                    <div class="chart-placeholder">
+                        Distribution Chart will be displayed here
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="js/background.js"></script>
+</body>
+</html> 
