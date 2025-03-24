@@ -26,7 +26,7 @@ const password = document.getElementById('password').value;
 
 // submit
 const submit = document.getElementById('submit').value;
-submit.addEventListener("click", function(event){
+submit.addEventListener('click', function(event){
     event.preventDefault();
     alert('Funcionou!')
 })
