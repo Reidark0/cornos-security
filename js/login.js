@@ -38,7 +38,7 @@ submit.addEventListener('click', function (event) {
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
-            alert('Criando conta...')
+            alert('Acessando conta...')
             window.location.href =  'dashboard.html'
             // ...
         })
